@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: featureCard
+name: Feature Card
+icon: screen
+parameters:
+  - id: iconName
+    name: Icon Name
+    type: text
+    guidance: >-
+      Choose an icon name from lucide-react (e.g. Brain, Zap, BarChart3, Lock,
+      Cpu, RefreshCw)
+    typeConfig:
+      required: true
+  - id: title
+    name: Title
+    type: text
+    guidance: Feature title, 2-4 words
+    typeConfig:
+      required: true
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Feature description, 1-2 sentences
+    typeConfig:
+      required: true
+    localizable: true
+description: Individual feature card with icon, title and description
+useTeamPermissions: true
+slots: []
+titleParameter: iconName
+canBeComposition: false
+created: '2025-12-09T15:35:39.026082+00:00'
+updated: '2025-12-09T15:35:39.026082+00:00'

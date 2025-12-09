@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: page
+name: Page
+icon: screen
+parameters: []
+description: Main page composition container
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - header
+      - hero
+      - features
+      - faq
+      - cta
+      - footer
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+canBeComposition: true
+created: '2025-12-09T15:33:54.943844+00:00'
+updated: '2025-12-09T15:33:54.943844+00:00'

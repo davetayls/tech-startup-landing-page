@@ -1,0 +1,496 @@
+composition:
+  _name: Home
+  _id: ce12a224-884c-451c-9889-20f6a923175d
+  type: page
+  slots:
+    content:
+      - _id: dddb9e3b-d2a8-4cb1-ba9d-216d8d8aa6dc
+        type: header
+        parameters:
+          ctaText:
+            type: text
+            value: Get Started
+          brandName:
+            type: text
+            value: NeuralFlow
+          logoLetter:
+            type: text
+            value: 'N'
+      - _id: e6e46416-26c7-4ba6-bffb-4e8541d9885d
+        type: hero
+        parameters:
+          headline:
+            type: text
+            value: Transform Your Workflow with
+          badgeText:
+            type: text
+            value: ✨ Now with AI-Powered Automation
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Harness the power of advanced AI to streamline your
+                          processes, reduce manual work, and scale your business
+                          effortlessly. Join thousands of companies already
+                          transforming their operations.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+          trustBadge1:
+            type: text
+            value: 99.9% Uptime SLA
+          trustBadge2:
+            type: text
+            value: Enterprise Security
+          trustBadge3:
+            type: text
+            value: 24/7 Support
+          primaryCtaLink:
+            type: link
+            value:
+              path: '#trial'
+              type: url
+          primaryCtaText:
+            type: text
+            value: Start Free Trial
+          secondaryCtaLink:
+            type: link
+            value:
+              path: '#demo'
+              type: url
+          secondaryCtaText:
+            type: text
+            value: Watch Demo
+          headlineHighlight:
+            type: text
+            value: Intelligent Automation
+      - _id: caf2702f-4cc4-4604-b99a-8be1c7a6c069
+        type: features
+        slots:
+          featureCards:
+            - _id: 1c56e154-7426-4ebf-b637-12761d4b08bd
+              type: featureCard
+              parameters:
+                title:
+                  type: text
+                  value: AI-Powered Intelligence
+                iconName:
+                  type: text
+                  value: Brain
+                description:
+                  type: text
+                  value: >-
+                    Advanced machine learning models that learn and adapt to
+                    your unique business processes.
+            - _id: fffe145b-7085-4b48-a5fe-49e6490cda20
+              type: featureCard
+              parameters:
+                title:
+                  type: text
+                  value: Lightning Fast
+                iconName:
+                  type: text
+                  value: Zap
+                description:
+                  type: text
+                  value: >-
+                    Process thousands of tasks simultaneously with our
+                    distributed infrastructure.
+            - _id: bbbcc34b-921c-463d-ba4c-7cc2951a71f4
+              type: featureCard
+              parameters:
+                title:
+                  type: text
+                  value: Real-Time Analytics
+                iconName:
+                  type: text
+                  value: BarChart3
+                description:
+                  type: text
+                  value: >-
+                    Comprehensive dashboards and insights to monitor performance
+                    metrics.
+            - _id: 862f710d-8a46-4c7a-8bdb-ff32c4bd6ddf
+              type: featureCard
+              parameters:
+                title:
+                  type: text
+                  value: Enterprise Security
+                iconName:
+                  type: text
+                  value: Lock
+                description:
+                  type: text
+                  value: >-
+                    Bank-level encryption and compliance with all major security
+                    standards.
+            - _id: 44d5fd09-34f9-420f-8cfd-6e17a0dddb80
+              type: featureCard
+              parameters:
+                title:
+                  type: text
+                  value: Seamless Integration
+                iconName:
+                  type: text
+                  value: Cpu
+                description:
+                  type: text
+                  value: Connect with your existing tools and platforms in minutes.
+            - _id: b79e3efa-aaca-4396-889e-ed8abf4bb487
+              type: featureCard
+              parameters:
+                title:
+                  type: text
+                  value: Auto-Scaling
+                iconName:
+                  type: text
+                  value: RefreshCw
+                description:
+                  type: text
+                  value: >-
+                    Automatically scale resources based on demand, pay only for
+                    what you use.
+        parameters:
+          heading:
+            type: text
+            value: Powerful Features Built for Scale
+          description:
+            type: text
+            value: >-
+              Everything you need to automate, optimize, and grow your business
+              with cutting-edge technology.
+      - _id: 40891a5f-5109-4101-9c0e-4e70a05a53d5
+        type: faq
+        slots:
+          faqItems:
+            - _id: 5936f6d1-f028-45ad-83a4-58842826c985
+              type: faqItem
+              parameters:
+                answer:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                Most organizations get up and running within 24
+                                hours. Our onboarding team provides guided
+                                setup, API integration, and custom configuration
+                                to match your specific workflows.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: null
+                          textStyle: ''
+                          textFormat: 0
+                      direction: null
+                question:
+                  type: text
+                  value: How long does it take to set up NeuralFlow?
+            - _id: 917d27da-7395-4ea3-9879-d3fc612c45b1
+              type: faqItem
+              parameters:
+                answer:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                We maintain enterprise-grade security with SOC 2
+                                Type II compliance, end-to-end encryption,
+                                regular security audits, and 99.9% SLA uptime.
+                                All data is encrypted at rest and in transit.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: null
+                          textStyle: ''
+                          textFormat: 0
+                      direction: null
+                question:
+                  type: text
+                  value: What level of security does NeuralFlow provide?
+            - _id: 98291877-b99d-4ae3-a0b6-34296ecfbce4
+              type: faqItem
+              parameters:
+                answer:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                Yes! We offer pre-built integrations with 500+
+                                popular applications and custom API endpoints
+                                for any system. Our technical team can help with
+                                complex integrations.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: null
+                          textStyle: ''
+                          textFormat: 0
+                      direction: null
+                question:
+                  type: text
+                  value: Can NeuralFlow integrate with our existing systems?
+            - _id: 6889a2ef-ecf1-4eae-8802-26c5d3fcb7a4
+              type: faqItem
+              parameters:
+                answer:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                You retain full ownership of your data. Upon
+                                cancellation, you can export all your data in
+                                standard formats. We delete your information
+                                from our servers within 30 days of cancellation.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: null
+                          textStyle: ''
+                          textFormat: 0
+                      direction: null
+                question:
+                  type: text
+                  value: What happens to my data if I cancel?
+            - _id: 3882777a-3e08-40f1-b9ac-3ff02f34c16f
+              type: faqItem
+              parameters:
+                answer:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                Yes, all plans include priority support with
+                                dedicated account managers, technical support
+                                teams, and access to our community forum with
+                                24/7 assistance.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: null
+                          textStyle: ''
+                          textFormat: 0
+                      direction: null
+                question:
+                  type: text
+                  value: Do you offer dedicated support?
+            - _id: 2123039b-537d-4d5a-9aaa-f30f662b6c6c
+              type: faqItem
+              parameters:
+                answer:
+                  type: richText
+                  value:
+                    root:
+                      type: root
+                      format: ''
+                      indent: 0
+                      version: 1
+                      children:
+                        - type: paragraph
+                          format: ''
+                          indent: 0
+                          version: 1
+                          children:
+                            - mode: normal
+                              text: >-
+                                Our pricing is based on the number of automated
+                                tasks processed monthly. You only pay for what
+                                you use with no hidden fees. Enterprise plans
+                                come with volume discounts and custom pricing.
+                              type: text
+                              style: ''
+                              detail: 0
+                              format: 0
+                              version: 1
+                          direction: null
+                          textStyle: ''
+                          textFormat: 0
+                      direction: null
+                question:
+                  type: text
+                  value: How is pricing calculated?
+        parameters:
+          heading:
+            type: text
+            value: Frequently Asked Questions
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Have questions? We have answers. Can't find what
+                          you're looking for? Contact our support team.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+      - _id: 2e1c15e1-d52a-4cef-befc-2b7641b6f6d5
+        type: cta
+        parameters:
+          heading:
+            type: text
+            value: Ready to Transform Your Workflow?
+          disclaimer:
+            type: text
+            value: >-
+              💳 No credit card required. Cancel anytime. Enterprise support
+              available.
+          description:
+            type: richText
+            value:
+              root:
+                type: root
+                format: ''
+                indent: 0
+                version: 1
+                children:
+                  - type: paragraph
+                    format: ''
+                    indent: 0
+                    version: 1
+                    children:
+                      - mode: normal
+                        text: >-
+                          Join thousands of companies already saving thousands
+                          of hours every month with intelligent automation. Get
+                          started free, no credit card required.
+                        type: text
+                        style: ''
+                        detail: 0
+                        format: 0
+                        version: 1
+                    direction: null
+                    textStyle: ''
+                    textFormat: 0
+                direction: null
+          primaryCtaLink:
+            type: link
+            value:
+              path: '#trial'
+              type: url
+          primaryCtaText:
+            type: text
+            value: Start 14-Day Free Trial
+          secondaryCtaLink:
+            type: link
+            value:
+              path: '#demo'
+              type: url
+          secondaryCtaText:
+            type: text
+            value: Schedule a Demo
+      - _id: 13b4bac4-3c42-40ce-a22c-0551d06ef7f7
+        type: footer
+        parameters:
+          tagline:
+            type: text
+            value: Intelligent automation for the modern enterprise.
+          brandName:
+            type: text
+            value: NeuralFlow
+          logoLetter:
+            type: text
+            value: 'N'
+  _overridability:
+    hideLockedParameters: true
+created: '2025-12-09T15:37:19.063196+00:00'
+modified: '2025-12-09T15:39:11.966213+00:00'
+pattern: false

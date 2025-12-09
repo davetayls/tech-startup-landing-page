@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: faqItem
+name: FAQ Item
+icon: screen
+parameters:
+  - id: question
+    name: Question
+    type: text
+    guidance: Question text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: answer
+    name: Answer
+    type: richText
+    guidance: Answer text, 1-3 sentences
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: true
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+description: Individual FAQ item with question and answer
+useTeamPermissions: true
+slots: []
+titleParameter: question
+canBeComposition: false
+created: '2025-12-09T15:35:48.573768+00:00'
+updated: '2025-12-09T15:35:48.573768+00:00'

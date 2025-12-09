@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: features
+name: Features
+icon: screen
+parameters:
+  - id: heading
+    name: Heading
+    type: text
+    guidance: Section heading (e.g. Powerful Features Built for Scale)
+    typeConfig:
+      required: true
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Section description, 1-2 sentences
+    typeConfig:
+      required: true
+    localizable: true
+description: Features section with heading, description and a grid of feature cards
+useTeamPermissions: true
+slots:
+  - id: featureCards
+    name: Feature Cards
+    maxComponents: 6
+    minComponents: 3
+    allowedComponents:
+      - featureCard
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: true
+titleParameter: heading
+canBeComposition: false
+created: '2025-12-09T15:35:38.446185+00:00'
+updated: '2025-12-09T15:35:38.446185+00:00'

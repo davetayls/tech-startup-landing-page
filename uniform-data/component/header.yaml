@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: header
+name: Header
+icon: screen
+parameters:
+  - id: brandName
+    name: Brand Name
+    type: text
+    guidance: Brand name displayed in header (e.g. NeuralFlow)
+    typeConfig:
+      required: true
+  - id: logoLetter
+    name: Logo Letter
+    type: text
+    guidance: Single letter for the logo icon
+    typeConfig:
+      required: true
+  - id: ctaText
+    name: CTA Text
+    type: text
+    guidance: Primary CTA button text
+    typeConfig:
+      required: true
+description: Site header with logo, navigation, and CTA button
+useTeamPermissions: true
+slots: []
+titleParameter: brandName
+canBeComposition: false
+created: '2025-12-09T15:34:02.913134+00:00'
+updated: '2025-12-09T15:34:02.913134+00:00'
