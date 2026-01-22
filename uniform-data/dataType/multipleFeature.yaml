@@ -1,0 +1,17 @@
+id: multipleFeature
+displayName: Multiple Feature
+ttl: 30
+path: /multiple
+custom:
+  proposedName: Multiple Feature
+  allowedContentTypes:
+    - feature
+method: GET
+purgeKey: 0f12b540-5903-432f-ad1c-903332f4e08c
+archetype: multipleEntries
+variables:
+  entryIds:
+    type: text
+    default: ''
+dataSourceId: neuralflowTechStartup
+allowedOnComponents: []

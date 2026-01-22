@@ -27,9 +27,11 @@ slots:
     minComponents: 3
     allowedComponents:
       - featureCard
+      - $loop
+      - $p:d3a05336-dfc6-4f6d-b56b-ad16f31470c5
     inheritAllowedComponents: false
     patternsInAllowedComponents: true
 titleParameter: heading
 canBeComposition: false
 created: '2025-12-09T15:35:38.446185+00:00'
-updated: '2025-12-09T15:35:38.446185+00:00'
+updated: '2026-01-22T12:18:47.239112+00:00'

@@ -3,8 +3,30 @@
 import { useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Play } from "lucide-react"
+import {
+  ComponentProps,
+  UniformText,
+  UniformRichText,
+} from "@uniformdev/canvas-next-rsc/component"
+import { LinkParamValue } from "@uniformdev/canvas"
 
-export function Hero() {
+type HeroParameters = {
+  badgeText?: string
+  headline?: string
+  headlineHighlight?: string
+  description?: string
+  primaryCtaText?: string
+  primaryCtaLink?: LinkParamValue
+  secondaryCtaText?: string
+  secondaryCtaLink?: LinkParamValue
+  trustBadge1?: string
+  trustBadge2?: string
+  trustBadge3?: string
+}
+
+type HeroProps = ComponentProps<HeroParameters>
+
+export function Hero({ component, context, primaryCtaLink, secondaryCtaLink, trustBadge1, trustBadge2, trustBadge3 }: HeroProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
@@ -107,50 +129,96 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-6 inline-block">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card/50 backdrop-blur-sm text-sm text-muted-foreground hover:text-foreground transition-colors">
-            ✨ Now with AI-Powered Automation
-          </span>
+          <UniformText
+            component={component}
+            context={context}
+            parameterId="badgeText"
+            as="span"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-card/50 backdrop-blur-sm text-sm text-muted-foreground hover:text-foreground transition-colors"
+            placeholder="✨ Badge text"
+          />
         </div>
 
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-tight text-balance">
-          Transform Your Workflow with
+          <UniformText
+            component={component}
+            context={context}
+            parameterId="headline"
+            placeholder="Your headline"
+          />
           <span className="block mt-2 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-            Intelligent Automation
+            <UniformText
+              component={component}
+              context={context}
+              parameterId="headlineHighlight"
+              placeholder="Highlighted text"
+            />
           </span>
         </h1>
 
-        <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed text-pretty">
-          Harness the power of advanced AI to streamline your processes, reduce manual work, and scale your business
-          effortlessly. Join thousands of companies already transforming their operations.
-        </p>
+        <div className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed text-pretty">
+          <UniformRichText
+            component={component}
+            context={context}
+            parameterId="description"
+            placeholder="Description paragraph"
+          />
+        </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 h-12 text-base gap-2">
-            Start Free Trial
-            <ArrowRight size={20} />
+          <Button
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 h-12 text-base gap-2"
+            asChild
+          >
+            <a href={primaryCtaLink?.path || "#"}>
+              <UniformText
+                component={component}
+                context={context}
+                parameterId="primaryCtaText"
+                placeholder="Primary CTA"
+              />
+              <ArrowRight size={20} />
+            </a>
           </Button>
-          <Button variant="outline" className="px-8 h-12 text-base gap-2 border-border hover:bg-card bg-transparent">
-            <Play size={20} />
-            Watch Demo
+          <Button variant="outline" className="px-8 h-12 text-base gap-2 border-border hover:bg-card bg-transparent" asChild>
+            <a href={secondaryCtaLink?.path || "#"}>
+              <Play size={20} />
+              <UniformText
+                component={component}
+                context={context}
+                parameterId="secondaryCtaText"
+                placeholder="Secondary CTA"
+              />
+            </a>
           </Button>
         </div>
 
         {/* Trust badges */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-muted-foreground">
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-accent" />
-            <span>99.9% Uptime SLA</span>
-          </div>
-          <div className="hidden sm:block w-px h-5 bg-border" />
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-accent" />
-            <span>Enterprise Security</span>
-          </div>
-          <div className="hidden sm:block w-px h-5 bg-border" />
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-accent" />
-            <span>24/7 Support</span>
-          </div>
+          {trustBadge1 && (
+            <>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-accent" />
+                <span>{trustBadge1}</span>
+              </div>
+              {(trustBadge2 || trustBadge3) && <div className="hidden sm:block w-px h-5 bg-border" />}
+            </>
+          )}
+          {trustBadge2 && (
+            <>
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-accent" />
+                <span>{trustBadge2}</span>
+              </div>
+              {trustBadge3 && <div className="hidden sm:block w-px h-5 bg-border" />}
+            </>
+          )}
+          {trustBadge3 && (
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-accent" />
+              <span>{trustBadge3}</span>
+            </div>
+          )}
         </div>
       </div>
     </section>

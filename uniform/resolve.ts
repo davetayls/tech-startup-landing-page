@@ -7,6 +7,7 @@ import { Page } from "@/components/page";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { Features } from "@/components/features";
+import { FeatureCard } from "@/components/feature-card";
 import { FAQ } from "@/components/faq";
 import { CTA } from "@/components/cta";
 import { Footer } from "@/components/footer";
@@ -37,6 +38,12 @@ export const resolveComponent: ResolveComponentFunction = ({ component }) => {
   if (component.type === "features") {
     result = {
       component: Features,
+    };
+  }
+
+  if (component.type === "featureCard") {
+    result = {
+      component: FeatureCard,
     };
   }
 

@@ -21,7 +21,7 @@ composition:
         parameters:
           headline:
             type: text
-            value: Transform Your Workflow with
+            value: Transform Your Workflow for
           badgeText:
             type: text
             value: ✨ Now with AI-Powered Automation
@@ -88,86 +88,22 @@ composition:
           featureCards:
             - _id: 1c56e154-7426-4ebf-b637-12761d4b08bd
               type: featureCard
-              parameters:
-                title:
-                  type: text
-                  value: AI-Powered Intelligence
-                iconName:
-                  type: text
-                  value: Brain
-                description:
-                  type: text
-                  value: >-
-                    Advanced machine learning models that learn and adapt to
-                    your unique business processes.
-            - _id: fffe145b-7085-4b48-a5fe-49e6490cda20
+              _pattern: d3a05336-dfc6-4f6d-b56b-ad16f31470c5
+            - _id: 2a1f891d-52ec-441f-9fce-7498ad39e22a
               type: featureCard
-              parameters:
-                title:
-                  type: text
-                  value: Lightning Fast
-                iconName:
-                  type: text
-                  value: Zap
-                description:
-                  type: text
-                  value: >-
-                    Process thousands of tasks simultaneously with our
-                    distributed infrastructure.
-            - _id: bbbcc34b-921c-463d-ba4c-7cc2951a71f4
+              _pattern: d3a05336-dfc6-4f6d-b56b-ad16f31470c5
+            - _id: bcf8b2ef-daa8-4f86-b9ea-333bb359cddf
               type: featureCard
-              parameters:
-                title:
-                  type: text
-                  value: Real-Time Analytics
-                iconName:
-                  type: text
-                  value: BarChart3
-                description:
-                  type: text
-                  value: >-
-                    Comprehensive dashboards and insights to monitor performance
-                    metrics.
-            - _id: 862f710d-8a46-4c7a-8bdb-ff32c4bd6ddf
+              _pattern: d3a05336-dfc6-4f6d-b56b-ad16f31470c5
+            - _id: e8461c2a-32e6-4e2c-a2f0-30548a55f60c
               type: featureCard
-              parameters:
-                title:
-                  type: text
-                  value: Enterprise Security
-                iconName:
-                  type: text
-                  value: Lock
-                description:
-                  type: text
-                  value: >-
-                    Bank-level encryption and compliance with all major security
-                    standards.
-            - _id: 44d5fd09-34f9-420f-8cfd-6e17a0dddb80
+              _pattern: d3a05336-dfc6-4f6d-b56b-ad16f31470c5
+            - _id: 7a65af3d-482c-46a1-bd3c-7539df374129
               type: featureCard
-              parameters:
-                title:
-                  type: text
-                  value: Seamless Integration
-                iconName:
-                  type: text
-                  value: Cpu
-                description:
-                  type: text
-                  value: Connect with your existing tools and platforms in minutes.
-            - _id: b79e3efa-aaca-4396-889e-ed8abf4bb487
+              _pattern: d3a05336-dfc6-4f6d-b56b-ad16f31470c5
+            - _id: c37277d0-66b7-41f2-9ab5-624500dad597
               type: featureCard
-              parameters:
-                title:
-                  type: text
-                  value: Auto-Scaling
-                iconName:
-                  type: text
-                  value: RefreshCw
-                description:
-                  type: text
-                  value: >-
-                    Automatically scale resources based on demand, pay only for
-                    what you use.
+              _pattern: d3a05336-dfc6-4f6d-b56b-ad16f31470c5
         parameters:
           heading:
             type: text
@@ -489,8 +425,45 @@ composition:
           logoLetter:
             type: text
             value: 'N'
+  _dataResources:
+    Feature List Content:
+      type: multipleFeature
+      variables:
+        entryIds: >-
+          a866f31b-925d-4460-a80c-97eda94aaace,33745f7d-abd8-4d73-bd9e-3e55bac27484,c0df761e-fbe7-489d-8624-fa3545dbd257,561cddb7-1c11-4bfa-9b65-33a555206018
+  _overrides:
+    2a1f891d-52ec-441f-9fce-7498ad39e22a:
+      dataResources:
+        Feature Content:
+          type: feature
+          variables:
+            entryId: 15906c00-468c-42b3-afd2-609e6f1f0214
+    7a65af3d-482c-46a1-bd3c-7539df374129:
+      dataResources:
+        Feature Content:
+          type: feature
+          variables:
+            entryId: c0df761e-fbe7-489d-8624-fa3545dbd257
+    bcf8b2ef-daa8-4f86-b9ea-333bb359cddf:
+      dataResources:
+        Feature Content:
+          type: feature
+          variables:
+            entryId: 5ae352f0-07b0-41a5-8a49-6415ad8ebf1e
+    c37277d0-66b7-41f2-9ab5-624500dad597:
+      dataResources:
+        Feature Content:
+          type: feature
+          variables:
+            entryId: 33745f7d-abd8-4d73-bd9e-3e55bac27484
+    e8461c2a-32e6-4e2c-a2f0-30548a55f60c:
+      dataResources:
+        Feature Content:
+          type: feature
+          variables:
+            entryId: c0df761e-fbe7-489d-8624-fa3545dbd257
   _overridability:
     hideLockedParameters: true
 created: '2025-12-09T15:37:19.063196+00:00'
-modified: '2025-12-09T15:39:11.966213+00:00'
+modified: '2026-01-22T12:37:14.267636+00:00'
 pattern: false

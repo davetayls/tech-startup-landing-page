@@ -1,0 +1,21 @@
+endpoint:
+  channels: null
+  createdAt: 2026-01-22T11:50:16.829Z
+  description: ''
+  disabled: false
+  filterTypes:
+    - entry.published
+  id: ep_38byZ3Qg6YdxKrJnFuQHRogLvW6
+  metadata: {}
+  rateLimit: null
+  uid: null
+  updatedAt: 2026-01-22T11:50:16.829Z
+  url: https://arg-releases-abu-sys.trycloudflare.com/api/uniform-webhook
+  version: 1
+headers:
+  headers: {}
+  sensitive: []
+transformation:
+  code: null
+  enabled: false
+  updatedAt: null

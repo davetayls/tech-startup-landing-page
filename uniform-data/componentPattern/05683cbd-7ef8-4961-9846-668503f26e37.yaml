@@ -1,0 +1,10 @@
+composition:
+  _name: Feature Card pattern
+  _id: 05683cbd-7ef8-4961-9846-668503f26e37
+  type: featureCard
+  parameters: {}
+  _overridability:
+    hideLockedParameters: true
+created: '2025-12-10T09:36:34.082803+00:00'
+modified: '2025-12-10T09:36:34.082803+00:00'
+pattern: true
