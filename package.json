@@ -13,7 +13,7 @@
     "uniform:backup:data-sources": "node --env-file=.env scripts/backup.mjs",
     "uniform:backup:preview": "BACKUP_STATE=preview uniform sync pull --config uniform-backup.config.ts",
     "uniform:backup:published": "BACKUP_STATE=published uniform sync pull --config uniform-backup.config.ts",
-    "uniform:restore": "pnpm uniform:restore:preview && pnpm uniform:restore:published",
+    "uniform:restore": "pnpm uniform:restore:published && pnpm uniform:restore:preview",
     "uniform:restore:preview": "BACKUP_STATE=preview uniform sync push --config uniform-backup.config.ts",
     "uniform:restore:published": "BACKUP_STATE=published uniform sync push --config uniform-backup.config.ts"
   },
