@@ -12,7 +12,7 @@ composition:
         parameters:
           headline:
             type: text
-            value: Transform Your Workflow for
+            value: Draft Transform Your Workflow for
           badgeText:
             type: text
             value: ✨ Now with AI-Powered Automation
@@ -446,6 +446,6 @@ composition:
             entryId: c0df761e-fbe7-489d-8624-fa3545dbd257
   _overridability:
     hideLockedParameters: true
-created: '2026-03-05T14:26:32.48399+00:00'
-modified: '2026-03-05T14:33:59.802457+00:00'
+created: '2025-12-09T15:37:19.063196+00:00'
+modified: '2026-03-05T12:28:11.643634+00:00'
 pattern: false

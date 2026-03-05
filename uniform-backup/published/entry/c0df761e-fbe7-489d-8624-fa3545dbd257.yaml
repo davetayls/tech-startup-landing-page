@@ -1,0 +1,20 @@
+created: '2026-01-22T12:25:13.774481+00:00'
+modified: '2026-01-22T12:25:13.774481+00:00'
+pattern: false
+entry:
+  _id: c0df761e-fbe7-489d-8624-fa3545dbd257
+  _name: Enterprise Security
+  _slug: enterprise-security
+  type: feature
+  fields:
+    title:
+      type: text
+      value: Enterprise Security
+    iconName:
+      type: text
+      value: Lock
+    description:
+      type: text
+      value: Bank-level encryption and compliance with all major security standards.
+  _overridability:
+    hideLockedParameters: true

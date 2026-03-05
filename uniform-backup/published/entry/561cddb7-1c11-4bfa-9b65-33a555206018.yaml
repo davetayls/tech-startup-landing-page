@@ -1,0 +1,22 @@
+created: '2026-01-22T12:28:47.884362+00:00'
+modified: '2026-01-22T14:36:19.135075+00:00'
+pattern: false
+entry:
+  _id: 561cddb7-1c11-4bfa-9b65-33a555206018
+  _name: AI-Powered Intelligence
+  _slug: ai-powered-intelligence
+  type: feature
+  fields:
+    title:
+      type: text
+      value: AI-Powered Intelligence
+    iconName:
+      type: text
+      value: Brain
+    description:
+      type: text
+      value: >-
+        Advanced machine learning models that learn and adapt to your unique
+        business processes.
+  _overridability:
+    hideLockedParameters: true

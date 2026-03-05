@@ -1,0 +1,36 @@
+id: feature
+name: Feature
+created: '2026-01-22T11:55:30.340963+00:00'
+updated: '2026-01-22T12:00:32.735314+00:00'
+slugSettings: {}
+useTeamPermissions: true
+fields:
+  - id: iconName
+    name: Icon Name
+    type: text
+    guidance: >-
+      Choose an icon name from lucide-react (e.g. Brain, Zap, BarChart3, Lock,
+      Cpu, RefreshCw)
+    typeConfig:
+      required: true
+    localizable: false
+  - id: title
+    name: Title
+    type: text
+    guidance: Feature title, 2-4 words
+    typeConfig:
+      required: true
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    guidance: Feature description, 1-2 sentences
+    typeConfig:
+      required: true
+    localizable: true
+entryName: title
+description: A feature with icon, title and description for displaying in feature cards
+icon: file-document
+type: contentType
+permissions: []
+previewConfigurations: []

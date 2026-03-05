@@ -1,0 +1,117 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: hero
+name: Hero
+icon: screen
+parameters:
+  - id: badgeText
+    name: Badge Text
+    type: text
+    guidance: Small badge text above headline (e.g. Now with AI-Powered Automation)
+    typeConfig:
+      required: false
+    localizable: true
+  - id: headline
+    name: Headline
+    type: text
+    guidance: Main headline, 1-2 lines maximum
+    typeConfig:
+      required: true
+    localizable: true
+  - id: headlineHighlight
+    name: Headline Highlight
+    type: text
+    guidance: Highlighted part of the headline with gradient
+    typeConfig:
+      required: true
+    localizable: true
+  - id: description
+    name: Description
+    type: richText
+    guidance: Descriptive paragraph under headline, 2-3 sentences
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: true
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+  - id: primaryCtaText
+    name: Primary CTA Text
+    type: text
+    guidance: Primary CTA button text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: primaryCtaLink
+    name: Primary CTA Link
+    type: link
+    guidance: Primary CTA button link
+    typeConfig:
+      required: true
+  - id: secondaryCtaText
+    name: Secondary CTA Text
+    type: text
+    guidance: Secondary CTA button text
+    typeConfig:
+      required: false
+    localizable: true
+  - id: secondaryCtaLink
+    name: Secondary CTA Link
+    type: link
+    guidance: Secondary CTA button link
+    typeConfig:
+      required: false
+  - id: trustBadge1
+    name: Trust Badge 1
+    type: text
+    guidance: First trust badge text
+    typeConfig:
+      required: false
+    localizable: true
+  - id: trustBadge2
+    name: Trust Badge 2
+    type: text
+    guidance: Second trust badge text
+    typeConfig:
+      required: false
+    localizable: true
+  - id: trustBadge3
+    name: Trust Badge 3
+    type: text
+    guidance: Third trust badge text
+    typeConfig:
+      required: false
+    localizable: true
+description: Hero section with animated background, headline, description, and CTAs
+useTeamPermissions: true
+slots: []
+titleParameter: badgeText
+canBeComposition: false
+created: '2025-12-09T15:34:14.306376+00:00'
+updated: '2025-12-09T15:34:14.306376+00:00'

@@ -1,0 +1,9 @@
+id: 1d985596-54b7-48c9-9f9d-24947a13915b
+name: Page B
+order: 600
+path: /page-b
+type: composition
+pathSegment: page-b
+data: {}
+compositionId: 6cffc222-9e3b-4102-b767-45b21d3e2185
+projectMapId: 612f5003-bf9a-4cda-91ce-95755e9bb686

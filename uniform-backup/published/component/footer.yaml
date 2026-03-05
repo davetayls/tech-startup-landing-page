@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: footer
+name: Footer
+icon: screen
+parameters:
+  - id: brandName
+    name: Brand Name
+    type: text
+    guidance: Brand name (e.g. NeuralFlow)
+    typeConfig:
+      required: true
+  - id: logoLetter
+    name: Logo Letter
+    type: text
+    guidance: Single letter for logo
+    typeConfig:
+      required: true
+  - id: tagline
+    name: Tagline
+    type: text
+    guidance: Brand tagline or description
+    typeConfig:
+      required: true
+    localizable: true
+description: Site footer with brand, navigation columns, and social links
+useTeamPermissions: true
+slots: []
+titleParameter: brandName
+canBeComposition: false
+created: '2025-12-09T15:36:04.473634+00:00'
+updated: '2025-12-09T15:36:04.473634+00:00'

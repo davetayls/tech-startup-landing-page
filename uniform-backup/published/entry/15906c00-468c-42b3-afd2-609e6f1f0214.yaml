@@ -1,0 +1,22 @@
+created: '2026-01-22T12:23:02.883564+00:00'
+modified: '2026-01-22T12:23:02.883564+00:00'
+pattern: false
+entry:
+  _id: 15906c00-468c-42b3-afd2-609e6f1f0214
+  _name: Lightning Fast
+  _slug: lightning-fast
+  type: feature
+  fields:
+    title:
+      type: text
+      value: Lightning Fast
+    iconName:
+      type: text
+      value: Zap
+    description:
+      type: text
+      value: >-
+        Process thousands of tasks simultaneously with our distributed
+        infrastructure.
+  _overridability:
+    hideLockedParameters: true

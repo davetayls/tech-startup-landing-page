@@ -1,0 +1,17 @@
+composition:
+  _name: Site Header
+  _id: e7580bef-6f58-490c-96bf-874c6ba9d5f5
+  type: header
+  parameters:
+    ctaText:
+      type: text
+      value: Get Started
+    brandName:
+      type: text
+      value: NeuralFlow
+    logoLetter:
+      type: text
+      value: 'N'
+created: '2026-03-05T12:17:44.616245+00:00'
+modified: '2026-03-05T12:17:44.616245+00:00'
+pattern: true

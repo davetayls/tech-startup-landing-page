@@ -15,7 +15,8 @@ const allConfig = uniformConfig({
             composition: createOrUpdatePush,
             componentPattern: createOrUpdatePush
         }
-    }
+    },
+    disableEntities: ['webhook']
 })
 
 export default allConfig;

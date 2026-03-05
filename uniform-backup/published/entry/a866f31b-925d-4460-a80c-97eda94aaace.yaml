@@ -1,0 +1,22 @@
+created: '2026-01-22T12:15:09.997776+00:00'
+modified: '2026-01-22T12:15:09.997776+00:00'
+pattern: false
+entry:
+  _id: a866f31b-925d-4460-a80c-97eda94aaace
+  _name: Auto-Scaling
+  _slug: auto-scaling
+  type: feature
+  fields:
+    title:
+      type: text
+      value: Auto-Scaling
+    iconName:
+      type: text
+      value: RefreshCw
+    description:
+      type: text
+      value: >-
+        Automatically scale resources based on demand, pay only for what you
+        use.
+  _overridability:
+    hideLockedParameters: true

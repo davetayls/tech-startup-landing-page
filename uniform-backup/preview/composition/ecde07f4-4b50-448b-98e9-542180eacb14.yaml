@@ -1,0 +1,9 @@
+composition:
+  _name: Page A
+  _id: ecde07f4-4b50-448b-98e9-542180eacb14
+  _slug: page-a
+  type: page
+  parameters: {}
+created: '2026-01-24T17:13:00.354261+00:00'
+modified: '2026-01-24T17:13:00.354261+00:00'
+pattern: false

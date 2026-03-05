@@ -1,0 +1,20 @@
+created: '2026-01-22T11:56:31.48029+00:00'
+modified: '2026-01-22T12:26:43.943399+00:00'
+pattern: false
+entry:
+  _id: 5ae352f0-07b0-41a5-8a49-6415ad8ebf1e
+  _name: Real-Time Analytics
+  _slug: real-time-analytics
+  type: feature
+  fields:
+    title:
+      type: text
+      value: Real-Time Analytics
+    iconName:
+      type: text
+      value: BarChart3
+    description:
+      type: text
+      value: Comprehensive dashboards and insights to monitor performance metrics.
+  _overridability:
+    hideLockedParameters: true

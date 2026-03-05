@@ -42,7 +42,7 @@ const MAX_RECURSION_DEPTH: Record<EntityType, number> = {
   compositionPattern: 1,
 };
 
-const MAX_TOTAL_API_CALLS = 50;
+const MAX_TOTAL_API_CALLS = 10;
 
 // =============================================================================
 // Webhook Handler
@@ -77,7 +77,6 @@ export async function POST(request: NextRequest) {
       console.warn('UNIFORM_WEBHOOK_SECRET not configured - skipping signature verification (not recommended for production)');
       payload = await request.json();
     }
-    console.log(payload);
 
     // Only process handled event types
     if (!HANDLED_EVENT_TYPES.includes(payload.eventType)) {
@@ -96,13 +95,17 @@ export async function POST(request: NextRequest) {
       }, { status: 400 });
     }
 
+    console.log(`Revalidating ${payload.eventType} (${payload.id}) for ${payload.name}`);
+
     // Create API clients
     const relationshipClient = new RelationshipClient({
+      apiHost: process.env.UNIFORM_API_HOST!,
       apiKey: process.env.UNIFORM_API_KEY!,
       projectId,
     });
 
     const projectMapClient = new ProjectMapClient({
+      apiHost: process.env.UNIFORM_API_HOST!,
       apiKey: process.env.UNIFORM_API_KEY!,
       projectId,
     });
@@ -142,10 +145,11 @@ export async function POST(request: NextRequest) {
       },
     };
 
-    console.log(JSON.stringify({
-      event: 'webhook_processed',
-      ...response,
-    }));
+    console.log(
+      `Revalidating complete ${payload.eventType} (${payload.id}) for ${payload.name}`,
+      response.revalidatedPaths,
+      JSON.stringify(response.stats)
+    );
 
     return NextResponse.json(response);
 
@@ -210,7 +214,7 @@ async function findAllAffectedPathsBFS(
 
       // Skip if we've hit max depth for this entity type
       const maxDepthForType = MAX_RECURSION_DEPTH[type];
-      if (depth >= maxDepthForType) {
+      if (depth > maxDepthForType) {
         console.warn(`Max recursion depth (${maxDepthForType}) reached for ${key}`);
         continue;
       }
@@ -245,7 +249,6 @@ async function findAllAffectedPathsBFS(
         // Process each relationship response
         for (const rel of relationships) {
           if (!rel.instances) continue;
-          console.log('Found relationship', rel)
 
           for (const instance of rel.instances) {
             const instanceId = instance.instance._id;
@@ -264,14 +267,17 @@ async function findAllAffectedPathsBFS(
             )?.[2] ?? 0;
 
             if (instanceType === 'composition') {
+              console.log('=> relationship: composition', instance.instance._name, instance.definition)
               // Found a composition - collect for path resolution
               compositionIds.add(instanceId);
               visited.add(nextKey);
             } else if (instanceType === 'entry') {
+              console.log('=> relationship: entry', instance.instance._name, instance.definition)
               // Found an entry - add to queue for further exploration
               const nextType: EntityType = instance.pattern ? 'entryPattern' : 'entry';
               queue.push([instanceId, nextType, currentDepth + 1]);
             } else if (instanceType === 'component' && instance.pattern) {
+              console.log('=> relationship: component pattern', instance.instance._name, instance.definition)
               // Found a component pattern - need to find compositions using this pattern
               queue.push([instanceId, 'componentPattern', currentDepth + 1]);
             }

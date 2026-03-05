@@ -1,0 +1,17 @@
+id: feature
+displayName: Feature
+ttl: 30
+path: /single
+custom:
+  proposedName: Feature
+  allowedContentTypes:
+    - feature
+method: GET
+purgeKey: bd3684bf-50d6-430b-9015-4afe8b61e5f2
+archetype: singleEntry
+variables:
+  entryId:
+    type: text
+    default: ''
+dataSourceId: neuralflowTechStartup
+allowedOnComponents: []

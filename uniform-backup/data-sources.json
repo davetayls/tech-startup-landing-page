@@ -1,0 +1,11 @@
+{
+  "results": [
+    {
+      "id": "neuralflowTechStartup",
+      "displayName": "NeuralFlow Tech Startup",
+      "connectorType": "uniformContent",
+      "baseUrl": "https://content.uniform.app",
+      "enableUnpublishedMode": true
+    }
+  ]
+}

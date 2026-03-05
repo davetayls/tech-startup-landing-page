@@ -1,0 +1,9 @@
+id: 734da645-5fec-4c31-8997-33955b819343
+name: Page A
+order: 500
+path: /page-a
+type: composition
+pathSegment: page-a
+data: {}
+compositionId: ecde07f4-4b50-448b-98e9-542180eacb14
+projectMapId: 612f5003-bf9a-4cda-91ce-95755e9bb686

@@ -1,0 +1,28 @@
+composition:
+  _name: Feature Card Pattern
+  _id: d3a05336-dfc6-4f6d-b56b-ad16f31470c5
+  type: featureCard
+  parameters:
+    title:
+      type: text
+      value: ${#jptr:/Feature Content/entry/fields/title/value}
+    iconName:
+      type: text
+      value: ${#jptr:/Feature Content/entry/fields/iconName/value}
+    description:
+      type: text
+      value: ${#jptr:/Feature Content/entry/fields/description/value}
+  _dataResources:
+    Feature Content:
+      type: feature
+      variables:
+        entryId: a866f31b-925d-4460-a80c-97eda94aaace
+      isPatternParameter: true
+      ignorePatternParameterDefault: false
+    ref-1c56e154-7426-4ebf-b637-12761d4b08bd-featureContent:
+      type: uniformContentInternalReference
+      variables:
+        entryIds: 561cddb7-1c11-4bfa-9b65-33a555206018
+created: '2026-01-22T12:02:26.546709+00:00'
+modified: '2026-01-22T12:16:09.664929+00:00'
+pattern: true

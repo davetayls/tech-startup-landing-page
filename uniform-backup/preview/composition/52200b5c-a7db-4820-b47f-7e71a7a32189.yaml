@@ -1,0 +1,9 @@
+composition:
+  _name: Page C
+  _id: 52200b5c-a7db-4820-b47f-7e71a7a32189
+  _slug: page-c
+  type: page
+  parameters: {}
+created: '2026-01-24T17:13:28.097073+00:00'
+modified: '2026-01-24T17:13:28.097073+00:00'
+pattern: false

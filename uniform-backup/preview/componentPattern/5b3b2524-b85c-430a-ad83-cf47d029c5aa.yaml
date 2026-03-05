@@ -1,0 +1,17 @@
+composition:
+  _name: Site Footer
+  _id: 5b3b2524-b85c-430a-ad83-cf47d029c5aa
+  type: footer
+  parameters:
+    tagline:
+      type: text
+      value: Intelligent automation for the modern enterprise.
+    brandName:
+      type: text
+      value: NeuralFlow
+    logoLetter:
+      type: text
+      value: 'N'
+created: '2026-03-05T12:17:55.478508+00:00'
+modified: '2026-03-05T12:17:55.478508+00:00'
+pattern: true

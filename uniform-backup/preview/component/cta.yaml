@@ -1,0 +1,89 @@
+# yaml-language-server: $schema=https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+$schema: https://eu.uniform.app/schemas/json-schema/component-definition/v1.json
+id: cta
+name: CTA
+icon: screen
+parameters:
+  - id: heading
+    name: Heading
+    type: text
+    guidance: Main CTA heading (e.g. Ready to Transform Your Workflow?)
+    typeConfig:
+      required: true
+    localizable: true
+  - id: description
+    name: Description
+    type: richText
+    guidance: CTA description, 1-2 sentences
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: true
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+      elementsConfig:
+        asset:
+          allowedTypes:
+            - image
+    localizable: true
+  - id: primaryCtaText
+    name: Primary CTA Text
+    type: text
+    guidance: Primary CTA button text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: primaryCtaLink
+    name: Primary CTA Link
+    type: link
+    guidance: Primary CTA button link
+    typeConfig:
+      required: true
+  - id: secondaryCtaText
+    name: Secondary CTA Text
+    type: text
+    guidance: Secondary CTA button text
+    typeConfig:
+      required: false
+    localizable: true
+  - id: secondaryCtaLink
+    name: Secondary CTA Link
+    type: link
+    guidance: Secondary CTA button link
+    typeConfig:
+      required: false
+  - id: disclaimer
+    name: Disclaimer
+    type: text
+    guidance: Small print text below buttons
+    typeConfig:
+      required: false
+    localizable: true
+description: Call-to-action section with heading, description, and CTA buttons
+useTeamPermissions: true
+slots: []
+titleParameter: heading
+canBeComposition: false
+created: '2025-12-09T15:35:57.169184+00:00'
+updated: '2025-12-09T15:35:57.169184+00:00'
